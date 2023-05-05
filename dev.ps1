@@ -1,6 +1,6 @@
 while (1) {
-    if (Test-Path .\dist) { Remove-Item -Force -Recurse .\dist }
-    Copy-Item .\src -Destination .\dist -Recurse
+    if (Test-Path .\dist) { Remove-Item -Force -Recurse .\dist\* }
+    Copy-Item .\src\* -Destination .\dist -Recurse
     cd src
     tailwindcss -i .\input.css -o ..\dist\generated.css
     cd ..

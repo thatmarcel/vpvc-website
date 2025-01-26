@@ -1,3 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --shadow-b1: 8px 8px 41px 6px rgba(255, 7, 95, 0.2);
+  --shadow-b1-hover: 4px 4px 20px 4px rgba(255, 7, 95, 0.2);
+}
